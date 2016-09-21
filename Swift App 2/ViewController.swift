@@ -12,6 +12,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var coolLabel: UILabel!
     
+    
+    @IBOutlet weak var text1: UITextField!
+    @IBOutlet weak var text2: UITextField!
+    
+    
     var tapCount=0
     
     @IBAction func button1Tapped(_ sender: AnyObject) {
@@ -26,7 +31,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         self.view.backgroundColor = UIColor.darkGray
     }
@@ -34,7 +38,6 @@ class ViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
