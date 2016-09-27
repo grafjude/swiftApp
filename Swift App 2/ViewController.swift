@@ -20,11 +20,27 @@ class ViewController: UIViewController {
 
     @IBAction func button1Tapped(_ sender: AnyObject) {
     
-        coolLabel.text = "answer is...\(Double(text2.text!)! + Double(text1.text!)!)"
+        coolLabel.text = "answer is...\(Double(text1.text!)! + Double(text2.text!)!)"
 
         // coolLabel.text! = String (Double (text1.text!)! * Double (text2.text!)!)
         
     }
+    
+    
+    @IBAction func button2Tapped(_ sender: AnyObject) {
+        coolLabel.text = "answer is...\(Double(text1.text!)! - Double(text2.text!)!)"
+
+    }
+    
+    @IBAction func button3Tapped(_ sender: AnyObject) {
+        coolLabel.text = "answer is...\(Double(text1.text!)! * Double(text2.text!)!)"
+
+    }
+    
+    @IBAction func button4Tapped(_ sender: AnyObject) {
+        coolLabel.text = "answer is...\(Double(text1.text!)! / Double(text2.text!)!)"
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
